@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Polaris | Computing Solutions</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-pZjf1YQ6Yf6Z1l0m7x2+6qfN1eQ4q1s3b6q6G9e2b1KZ9J1h2V3v9z8K5y2J1k2x" crossorigin="anonymous">
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="container">
-                <div class="logo">
-                    <h1> POLARIS</h1>
+                <div class="d-flex align-items-center">
+                    <div class="logo d-flex align-items-center me-3">
+                        <img src="Assets/logo-placeholder.png" alt="Polaris logo" class="logo-img me-3" />
+                        <div>
+                            <h1 class="m-0">POLARIS</h1>
+                            <p class="slogan m-0">Guiding Your Digital Journey</p>
+                        </div>
+                    </div>
+                    <button class="nav-toggle btn btn-outline-light d-md-none" aria-expanded="false" aria-controls="navLinks">
+                        ☰
+                    </button>
                 </div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul id="navLinks" class="nav-links d-md-flex align-items-center list-unstyled mb-0">
+                    <li class="me-3"><a href="#home">Home</a></li>
+                    <li class="me-3"><a href="#about">About</a></li>
+                    <li class="me-3"><a href="#services">Services</a></li>
+                    <li class="me-3"><a href="#team">Team</a></li>
+                    <li class="me-3"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -94,54 +107,54 @@
         <div class="container">
             <h2>Meet Our Team</h2>
             <p class="section-description">Our diverse team of experts brings together years of experience and passion for technology.</p>
-            <div class="team-grid">
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <div class="avatar-circle">SA</div>
+            <div class="row g-4">
+                <!-- Lead (Kellen) centered -->
+                <div class="col-12 text-center">
+                    <div class="team-card lead p-5 mx-auto" style="max-width:480px;">
+                        <div class="team-avatar mb-3">
+                            <div class="avatar-circle">K</div>
+                        </div>
+                        <h3>Kiconco Precious Kellen</h3>
+                        <p class="role">Project lead</p>
                     </div>
-                    <h3>Sarah Anderson</h3>
-                    <p class="role">Chief Executive Officer</p>
-                    <p class="bio">Visionary leader with 15+ years in tech innovation and strategic business growth.</p>
                 </div>
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <div class="avatar-circle">MC</div>
+
+                <!-- Remaining members in 2x2 layout -->
+                <div class="col-sm-6">
+                    <div class="team-card bg-white p-4">
+                        <div class="team-avatar mb-3">
+                            <div class="avatar-circle">NJ</div>
+                        </div>
+                        <h3>Nakire Jackline</h3>
+                        <p class="role">Team Member</p>
                     </div>
-                    <h3>Michael Chen</h3>
-                    <p class="role">Chief Technology Officer</p>
-                    <p class="bio">Expert in cloud architecture and emerging technologies, driving our technical excellence.</p>
                 </div>
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <div class="avatar-circle">EP</div>
+                <div class="col-sm-6">
+                    <div class="team-card bg-white p-4">
+                        <div class="team-avatar mb-3">
+                            <div class="avatar-circle">WF</div>
+                        </div>
+                        <h3>Wagonda Francis Precious</h3>
+                        <p class="role">Research Lead</p>
                     </div>
-                    <h3>Emily Parker</h3>
-                    <p class="role">Head of Cybersecurity</p>
-                    <p class="bio">Certified security specialist ensuring robust protection for all client systems.</p>
                 </div>
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <div class="avatar-circle">JR</div>
+                <div class="col-sm-6">
+                    <div class="team-card bg-white p-4">
+                        <div class="team-avatar mb-3">
+                            <div class="avatar-circle">KM</div>
+                        </div>
+                        <h3>Kyanjo Mathew Kiwumulo</h3>
+                        <p class="role">Communications Lead</p>
                     </div>
-                    <h3>James Rodriguez</h3>
-                    <p class="role">Lead Software Engineer</p>
-                    <p class="bio">Full-stack developer crafting scalable and efficient software solutions.</p>
                 </div>
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <div class="avatar-circle">LT</div>
+                <div class="col-sm-6">
+                    <div class="team-card bg-white p-4">
+                        <div class="team-avatar mb-3">
+                            <div class="avatar-circle">OC</div>
+                        </div>
+                        <h3>Omara Chrispus Adrian</h3>
+                        <p class="role">Design Lead</p>
                     </div>
-                    <h3>Lisa Thompson</h3>
-                    <p class="role">Data Analytics Director</p>
-                    <p class="bio">Transforming complex data into strategic insights that drive business decisions.</p>
-                </div>
-                <div class="team-card">
-                    <div class="team-avatar">
-                        <div class="avatar-circle">DK</div>
-                    </div>
-                    <h3>David Kim</h3>
-                    <p class="role">DevOps Manager</p>
-                    <p class="bio">Streamlining operations with cutting-edge automation and CI/CD pipelines.</p>
                 </div>
             </div>
         </div>
@@ -181,5 +194,8 @@
             <p>&copy; 2026 Polaris Computing Solutions. All rights reserved.</p>
         </div>
     </footer>
+    <!-- Bootstrap JS (bundle includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-abc123" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
