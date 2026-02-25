@@ -4,10 +4,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-dark: #0b1320; /* deep charcoal */
+    --primary-darker: #071018;
+    --accent: #00d084; /* cyber green */
+    --muted: #6b7280;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #e6f9f0;
+    background: var(--primary-darker);
     scroll-behavior: smooth;
 }
 
@@ -19,9 +27,9 @@ body {
 
 /* Navigation */
 .navbar {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-darker) 100%);
     color: white;
-    padding: 1rem 0;
+    padding: 0.75rem 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -38,6 +46,15 @@ body {
 .logo h1 {
     font-size: 1.8rem;
     letter-spacing: 2px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    margin-left: auto; /* push nav to the right */
 }
 
 .nav-links {
@@ -59,8 +76,8 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-darker) 100%);
+    color: #f8fafc;
     padding: 150px 0 100px;
     text-align: center;
     margin-top: 60px;
@@ -80,8 +97,8 @@ body {
 
 .cta-button {
     display: inline-block;
-    background: white;
-    color: #667eea;
+    background: var(--accent);
+    color: var(--primary-darker);
     padding: 15px 40px;
     border-radius: 50px;
     text-decoration: none;
@@ -100,6 +117,7 @@ body {
 /* Sections */
 section {
     padding: 80px 0;
+    background: var(--primary-dark);
 }
 
 section h2 {
@@ -119,7 +137,7 @@ section h2 {
 
 /* About Section */
 .about {
-    background: #f8f9fa;
+    background: transparent;
 }
 
 .about-grid {
@@ -160,8 +178,8 @@ section h2 {
 }
 
 .service-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-darker) 100%);
+    color: #e6f9f0;
     padding: 2.5rem;
     border-radius: 15px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -179,7 +197,7 @@ section h2 {
 
 /* Team Section */
 .team {
-    background: #f8f9fa;
+    background: transparent;
 }
 
 .team-grid {
@@ -189,11 +207,11 @@ section h2 {
 }
 
 .team-card {
-    background: white;
+    background: #ffffff;
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 18px 40px rgba(2,6,23,0.35);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -210,8 +228,8 @@ section h2 {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-darker) 100%);
+    color: var(--accent);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,7 +254,7 @@ section h2 {
 
 /* Lead team card styling */
 .team-card.lead {
-    box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+    box-shadow: 0 22px 60px rgba(2,6,23,0.45);
 }
 .team-card.lead .avatar-circle {
     width: 140px;
@@ -245,13 +263,12 @@ section h2 {
 }
 
 .team-card h3 {
-    color: #2a5298;
+    color: #071018;
     margin-bottom: 0.5rem;
     font-size: 1.3rem;
 }
-
 .team-card .role {
-    color: #667eea;
+    color: var(--accent);
     font-weight: 600;
     margin-bottom: 1rem;
     font-size: 0.95rem;
@@ -278,7 +295,7 @@ section h2 {
 }
 
 .info-item h3 {
-    color: #2a5298;
+    color: #071018;
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
 }
@@ -307,15 +324,42 @@ section h2 {
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: var(--accent);
 }
 
 /* Footer */
 footer {
-    background: #1e3c72;
-    color: white;
+    background: var(--primary-dark);
+    color: #e6f9f0;
     text-align: center;
     padding: 2rem 0;
+}
+
+/* Narrow team container for large side whitespace and centered lead */
+.team > .container {
+    max-width: 900px;
+}
+
+/* Ensure section headings/text are readable on dark background */
+section h2 {
+    color: #e6f9f0;
+}
+.section-description {
+    color: #cbd5e1;
+}
+
+/* Nav link color on dark bg */
+.nav-links a {
+    color: #e6f9f0;
+}
+
+/* make the logo image appear cleaner and left aligned */
+.logo-img {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: transparent;
 }
 
 /* Animation */
