@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Polaris | Computing Solutions</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-pZjf1YQ6Yf6Z1l0m7x2+6qfN1eQ4q1s3b6q6G9e2b1KZ9J1h2V3v9z8K5y2J1k2x" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-pZjf1YQ6Yf6Z1l0m7x2+6qfN1eQ4q1s3b6q6G9e2b1KZ9J1h2V3v9z8K5y2J1k2x" crossorigin="anonymous">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <div class="container">
-                <div class="d-flex align-items-center">
-                    <div class="logo d-flex align-items-center me-3">
-                        <img src="Assets/logo-placeholder.png" alt="Polaris logo" class="logo-img me-3" />
-                        <div>
-                            <h1 class="m-0">POLARIS</h1>
-                            <p class="slogan m-0">Guiding Your Digital Journey</p>
-                        </div>
+                <div class="logo d-flex align-items-center">
+                    <img src="Assets/logo/logo.jpeg" alt="Polaris logo" class="logo-img me-3" />
+                    <div>
+                        <h1 class="m-0 text-white">POLARIS</h1>
+                        <p class="slogan m-0">Guiding Your Digital Journey</p>
                     </div>
-                    <button class="nav-toggle btn btn-outline-light d-md-none" aria-expanded="false" aria-controls="navLinks">
-                        ☰
-                    </button>
                 </div>
+                <button class="nav-toggle btn border-0 text-white d-md-none fs-2 px-2" aria-expanded="false"
+                    aria-controls="navLinks">
+                    ☰
+                </button>
                 <ul id="navLinks" class="nav-links d-md-flex align-items-center list-unstyled mb-0">
                     <li class="me-3"><a href="#home">Home</a></li>
                     <li class="me-3"><a href="#about">About</a></li>
@@ -41,7 +49,8 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Computing Solutions That Guide Your Business Forward</h1>
-                <p>At Polaris , we navigate the complex world of technology to deliver innovative solutions that drive your success.</p>
+                <p>At Polaris , we navigate the complex world of technology to deliver innovative solutions that drive
+                    your success.</p>
                 <a href="#contact" class="cta-button">Get Started</a>
             </div>
         </div>
@@ -50,22 +59,18 @@
     <section id="about" class="about">
         <div class="container">
             <h2>About Polaris </h2>
-            <p class="section-description">We are a leading computing solutions provider dedicated to helping businesses harness the power of technology. Our team of experts delivers cutting-edge solutions tailored to your unique needs.</p>
+            <p class="section-description">We are a leading computing solutions provider dedicated to helping businesses
+                harness the power of technology. Our team of experts delivers cutting-edge solutions tailored to your
+                unique needs.</p>
             <div class="about-grid">
                 <div class="about-card">
-                    <div class="icon"></div>
-                    <h3>Mission-Driven</h3>
-                    <p>Empowering businesses through innovative technology solutions</p>
+                    <img src="Assets/about/mission.jpeg" alt="Mission-Driven" class="about-image">
                 </div>
                 <div class="about-card">
-                    <div class="icon"></div>
-                    <h3>Innovation First</h3>
-                    <p>Staying ahead with the latest technological advancements</p>
+                    <img src="Assets/about/innovation.jpeg" alt="Innovation First" class="about-image">
                 </div>
                 <div class="about-card">
-                    <div class="icon"></div>
-                    <h3>Client-Focused</h3>
-                    <p>Your success is our priority, always</p>
+                    <img src="Assets/about/client.jpeg" alt="Client-Focused" class="about-image">
                 </div>
             </div>
         </div>
@@ -76,28 +81,53 @@
             <h2>Our Services</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Cloud Solutions</h3>
-                    <p>Scalable cloud infrastructure and migration services</p>
+                    <div class="service-image-container"><img src="Assets/services/placeholder.jpg"
+                            alt="Cloud Solutions" class="service-image"></div>
+                    <div class="service-content">
+                        <h3>Cloud Solutions</h3>
+                        <p>Scalable cloud infrastructure and migration services</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <h3>Cybersecurity</h3>
-                    <p>Comprehensive security solutions to protect your data</p>
+                    <div class="service-image-container"><img
+                            src="/Assets/services/cyber-security-concept-digital-art.jpg" alt="Cybersecurity"
+                            class="service-image"></div>
+                    <div class="service-content">
+                        <h3>Cybersecurity</h3>
+                        <p>Comprehensive security solutions to protect your data</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <h3>Software Development</h3>
-                    <p>Custom applications tailored to your business needs</p>
+                    <div class="service-image-container"><img src="/Assets/services/software.jpg "
+                            alt="Software Development" class="service-image"></div>
+                    <div class="service-content">
+                        <h3>Software Development</h3>
+                        <p>Custom applications tailored to your business needs</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <h3>IT Consulting</h3>
-                    <p>Strategic technology guidance for business growth</p>
+                    <div class="service-image-container"><img src="/Assets/services/It consultation.jpeg"
+                            alt="IT Consulting" class="service-image"></div>
+                    <div class="service-content">
+                        <h3>IT Consulting</h3>
+                        <p>Strategic technology guidance for business growth</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <h3>Data Analytics</h3>
-                    <p>Transform data into actionable business insights</p>
+                    <div class="service-image-container"><img src="/Assets/services/analysics.jpg" alt="Data Analytics"
+                            class="service-image"></div>
+                    <div class="service-content">
+                        <h3>Data Analytics</h3>
+                        <p>Transform data into actionable business insights</p>
+                    </div>
                 </div>
                 <div class="service-card">
-                    <h3>DevOps Solutions</h3>
-                    <p>Streamline development and deployment processes</p>
+                    <div class="service-image-container"><img src="/Assets/services/dev opps.jpeg"
+                            alt="DevOps Solutions" class="service-image"></div>
+                    <div class="service-content">
+                        <h3>DevOps Solutions</h3>
+                        <p>Streamline development and deployment processes</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -105,54 +135,85 @@
 
     <section id="team" class="team">
         <div class="container">
-            <h2>Meet Our Team</h2>
-            <p class="section-description">Our diverse team of experts brings together years of experience and passion for technology.</p>
-            <div class="row g-4">
+            <div class="section-header text-center mb-5 mx-auto">
+                <h2>Meet Our Team</h2>
+                <p class="section-description">Our diverse team of experts brings together years of experience and
+                    passion
+                    for technology.</p>
+            </div>
 
-                <div class="col-12 text-center">
-                    <div class="team-card lead p-5 mx-auto" style="max-width:480px;">
-                        <div class="team-avatar mb-3">
-                            <div class="avatar-circle">K</div>
+            <!-- Project Lead Row (Guarantees it is alone on top) -->
+            <div class="team-lead-row mb-5 d-flex justify-content-center">
+                <div class="team-circle-item">
+                    <div class="team-avatar mb-3">
+                        <div class="avatar-circle">
+                            <img src="Assets/team/Precious.jpeg" alt="Kiconco Precious Kellen" class="team-image">
                         </div>
+                    </div>
+                    <div class="team-info">
                         <h3>Kiconco Precious Kellen</h3>
-                        <p class="role">Project lead</p>
+                        <p class="role">Project Lead</p>
+                        <p class="role">Software Engineer</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Members Row (The 4 remaining members) -->
+            <div class="team-circles-row">
+
+                <!-- Team Member -->
+                <div class="team-circle-item">
+                    <div class="team-avatar mb-3">
+                        <div class="avatar-circle">
+                            <img src="Assets/team/jacky.jpeg" alt="Nakire Jackline" class="team-image">
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Nakire Jackline</h3>
+                        <p class="role">Network Engineer</p>
+                        <p class="role">Cloud Engineer </p>
                     </div>
                 </div>
 
-                <div class="col-6">
-                    <div class="team-card  p-4">
-                        <div class="team-avatar mb-3">
-                            <div class="avatar-circle">NJ</div>
+                <!-- Research Lead -->
+                <div class="team-circle-item">
+                    <div class="team-avatar mb-3">
+                        <div class="avatar-circle">
+                            <img src="Assets/team/Francis.jpeg" alt="Wagonda Francis Precious" class="team-image">
                         </div>
-                        <h3>Nakire Jackline</h3>
-                        <p class="role">Team Member</p>
                     </div>
-                </div>
-                <div class="col-6">
-                    <div class="team-card bg-white p-4">
-                        <div class="team-avatar mb-3">
-                            <div class="avatar-circle">WF</div>
-                        </div>
+                    <div class="team-info">
                         <h3>Wagonda Francis Precious</h3>
                         <p class="role">Research Lead</p>
+                        <p class="role">Full Stack Developer </p>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="team-card bg-white p-4">
-                        <div class="team-avatar mb-3">
-                            <div class="avatar-circle">KM</div>
+
+                <!-- Communications Lead -->
+                <div class="team-circle-item">
+                    <div class="team-avatar mb-3">
+                        <div class="avatar-circle">
+                            <img src="Assets/team/Mathew.jpeg" alt="Kyanjo Mathew Kiwumulo" class="team-image">
                         </div>
+                    </div>
+                    <div class="team-info">
                         <h3>Kyanjo Mathew Kiwumulo</h3>
                         <p class="role">Communications Lead</p>
+                        <p class="role">Data Analyst</p>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="team-card bg-white p-4">
-                        <div class="team-avatar mb-3">
-                            <div class="avatar-circle">OC</div>
+
+                <!-- Design Lead -->
+                <div class="team-circle-item">
+                    <div class="team-avatar mb-3">
+                        <div class="avatar-circle">
+                            <img src="Assets/team/Adrian.jpeg" alt="Omara Chrispus Adrian" class="team-image">
                         </div>
+                    </div>
+                    <div class="team-info">
                         <h3>Omara Chrispus Adrian</h3>
                         <p class="role">Design Lead</p>
+                        <p class="role">L2 Cyber security Officer</p>
                     </div>
                 </div>
             </div>
@@ -162,31 +223,48 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Get In Touch</h2>
-            <p class="section-description">Ready to transform your business with innovative computing solutions? Let's talk.</p>
+            <p class="section-description">Ready to transform your business with innovative computing solutions? Let's
+                talk.</p>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="info-item">
                         <h3> Email</h3>
-                        <p>info@polaris-solutions.com</p>
+                        <p>polariscompany2@gmail.com</p>
                     </div>
                     <div class="info-item">
                         <h3> Phone</h3>
-                        <p>+256 ..........</p>
+                        <p>+256 771682349</p>
                     </div>
                     <div class="info-item">
                         <h3>📍 Location</h3>
-                        <p>Oba we put what </p>
-               </div>
+                        <p>Kamapal,Uganda </p>
+                    </div>
                 </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/mbdabllr" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                     <button type="submit" class="cta-button">Send Message</button>
                 </form>
             </div>
         </div>
     </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Message Sent Successfully!</h2>
+                <button type="button" class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Thank you for reaching out! We've received your message and will get back to you soon.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="cta-button" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="container">
@@ -194,7 +272,9 @@
         </div>
     </footer>
     <!-- Bootstrap JS (bundle includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-abc123" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-abc123"
+        crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
 </body>
+
 </html>
