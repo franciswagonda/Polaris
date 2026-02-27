@@ -28,4 +28,50 @@ document.addEventListener('DOMContentLoaded', function () {
             nav.style.display = '';
         }
     });
+
+    // Form submission handler
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            
+            // Send form data to Formspree
+            fetch(this.action, {
+                method: 'POST',
+                body: new FormData(this),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Show success modal
+                    showModal();
+                    // Reset form
+                    contactForm.reset();
+                } else {
+                    alert('There was an error sending your message. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was an error sending your message. Please try again.');
+            });
+        });
+    }
 });
+
+// Modal functions
+function showModal() {
+    const modal = document.getElementById('successModal');
+    if (modal) {
+        modal.classList.remove('hidden');
+    }
+}
+
+function closeModal() {
+    const modal = document.getElementById('successModal');
+    if (modal) {
+        modal.classList.add('hidden');
+    }
+}

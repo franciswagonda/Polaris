@@ -24,7 +24,34 @@
         <nav class="navbar">
             <div class="container">
                 <div class="logo d-flex align-items-center">
-                    <img src="Assets/logo/logo.jpeg" alt="Polaris logo" class="logo-img me-3" />
+                    <svg class="logo-img" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Outer circle -->
+                        <circle cx="50" cy="50" r="48" fill="none" stroke="#00d084" stroke-width="1.5" opacity="0.3"/>
+                        
+                        <!-- Main star points (5-pointed star) -->
+                        <!-- Top point -->
+                        <path d="M 50 12 L 58 35 L 82 35 L 65 50 L 73 73 L 50 58 L 27 73 L 35 50 L 18 35 L 42 35 Z" 
+                              fill="#00d084" opacity="0.9"/>
+                        
+                        <!-- Inner glow circle -->
+                        <circle cx="50" cy="50" r="18" fill="none" stroke="#00d084" stroke-width="1" opacity="0.4"/>
+                        <circle cx="50" cy="50" r="10" fill="#00d084" opacity="0.3"/>
+                        
+                        <!-- Central dot -->
+                        <circle cx="50" cy="50" r="4" fill="#00d084"/>
+                        
+                        <!-- Tech circuit lines -->
+                        <line x1="50" y1="50" x2="50" y2="25" stroke="#00d084" stroke-width="1" opacity="0.5"/>
+                        <line x1="50" y1="50" x2="75" y2="50" stroke="#00d084" stroke-width="1" opacity="0.5"/>
+                        <line x1="50" y1="50" x2="50" y2="75" stroke="#00d084" stroke-width="1" opacity="0.5"/>
+                        <line x1="50" y1="50" x2="25" y2="50" stroke="#00d084" stroke-width="1" opacity="0.5"/>
+                        
+                        <!-- Corner nodes -->
+                        <circle cx="50" cy="25" r="1.5" fill="#00d084"/>
+                        <circle cx="75" cy="50" r="1.5" fill="#00d084"/>
+                        <circle cx="50" cy="75" r="1.5" fill="#00d084"/>
+                        <circle cx="25" cy="50" r="1.5" fill="#00d084"/>
+                    </svg>
                     <div>
                         <h1 class="m-0 text-white">POLARIS</h1>
                         <p class="slogan m-0">Guiding Your Digital Journey</p>
@@ -81,7 +108,7 @@
             <h2>Our Services</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-image-container"><img src="Assets/services/placeholder.jpg"
+                    <div class="service-image-container"><img src="/Assets/services/cloud.jpeg"
                             alt="Cloud Solutions" class="service-image"></div>
                     <div class="service-content">
                         <h3>Cloud Solutions</h3>
@@ -228,7 +255,7 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="info-item">
-                        <h3> Email</h3>
+                        <h3>Email</h3>
                         <p>polariscompany2@gmail.com</p>
                     </div>
                     <div class="info-item">
@@ -236,14 +263,23 @@
                         <p>+256 771682349</p>
                     </div>
                     <div class="info-item">
-                        <h3>📍 Location</h3>
-                        <p>Kamapal,Uganda </p>
+                        <h3> Location</h3>
+                        <p>Kamapal, Uganda</p>
                     </div>
                 </div>
                 <form class="contact-form" id="contactForm" action="https://formspree.io/f/mbdabllr" method="POST">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your project or inquiry" rows="6" required></textarea>
+                    </div>
                     <button type="submit" class="cta-button">Send Message</button>
                 </form>
             </div>
